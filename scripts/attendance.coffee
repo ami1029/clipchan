@@ -1,3 +1,5 @@
+cronAnnounce = require('cron').CronJob
+
 module.exports = (robot) ->
-  robot.hear /今週の編集会の出欠を教えてほしいアズ！/i, (msg) ->
-   msg.send "アーズ 出席" 
+  new cronAnnounce '0 2 0 * * 1-4', () =>
+  robot.send {room: "#test_ami"}, "アーズ 出席", null, true, "Asia/Tokyo"
