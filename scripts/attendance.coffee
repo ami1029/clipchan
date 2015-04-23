@@ -1,5 +1,5 @@
-cronAnnounce = require('cron').CronJob
+CronJob = require('cron').CronJob
 
 module.exports = (robot) ->
-  new cronAnnounce '0 * * * * *', () =>
-  robot.send {room: "test_ami"}, "アーズ 出席", null, true, "Asia/Tokyo"
+  new CronJob '0 * * * * *', () =>
+    robot.messageRoom "test_ami", "テスト", null, true, "Asia/Tokyo"
