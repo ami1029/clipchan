@@ -1,3 +1,6 @@
+# くりっぷちゃん呼んでみよ
+# code written by ami kanzaki 
+
 module.exports = (robot) ->
   robot.hear /(くりっぷ|クリップ)(ちゃん|たん|はん|ぽん|ねき|さん|たそ|にゃん|くん|さま|嬢)/i, (msg) ->
    username = msg.message.user.name
