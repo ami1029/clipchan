@@ -10,6 +10,6 @@ module.exports = (robot) ->
 
   cid = setInterval ->
     return if typeof robot?.send isnt 'function'
-    robot.send {room: "test_ami"}, "アーズ 出席"
+    robot.send {room: "dev"}, "おっはよー！"
     clearInterval cid
   , 1000
