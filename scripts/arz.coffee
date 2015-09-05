@@ -2,7 +2,7 @@
 # written by ami kanzaki
 
 module.exports = (robot) ->
-  robot.hear /(アーズ|arz)( |　)(バシバシ|ベシベシ|ボコ)/, (msg) ->
+  robot.hear /(痛いアズー！)/, (msg) ->
     username = msg.message.user.name
     setTimeout ->
       msg.send msg.random [ "arz よしよし" ]
