@@ -5,5 +5,5 @@ module.exports = (robot) ->
   robot.hear /(アーズ|arz)( |　)(バシバシ|ベシベシ|ボコ)/, (msg) ->
     username = msg.message.user.name
     setTimeout ->
-      msg.send msg.random [ "アーズ よしよし" ]
+      msg.send msg.random [ "arz よしよし" ]
     , 800
