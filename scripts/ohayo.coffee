@@ -4,4 +4,4 @@
 module.exports = (robot) ->
   robot.hear /(おはよう|おはよ)/, (msg) ->
     username = msg.message.user.name
-    msg.send msg.random [ おはよー、"+username, "ん〜( ฅ ω｀)~ﾟ" ]
+    msg.send msg.random [ "おはよー、"+username, "ん〜( ฅ ω｀)~ﾟ" ]
